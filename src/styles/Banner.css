@@ -1,0 +1,90 @@
+#Banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#full-stack {
+  /* Minimum 2rem, scalable with viewport width, maximum 15rem */
+
+  font-size: clamp(2rem, 14vw, 20rem);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#swe {
+  /* Minimum 1.5rem, scalable with viewport width, maximum 12rem */
+
+  font-size: clamp(2rem, 14vw, 15rem);
+  margin-top: -1rem;
+  line-height: 1;
+}
+
+.pipes {
+  color: #323232;
+}
+
+#full-stack,
+#swe {
+  text-transform: uppercase;
+  letter-spacing: -.813rem;
+  font-weight: bold;
+}
+
+/* Handle letter spacing on display <768  */
+@media (max-width: 768px) {
+
+  #full-stack,
+  #swe {
+    letter-spacing: -.250rem;
+    line-height: 1.5;
+  }
+
+  #full-stack {
+    font-size: 16vw;
+  }
+}
+
+.tech {
+  letter-spacing: .518rem;
+}
+
+.tech {
+  letter-spacing: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Handle tech font on display < 1600 */
+@media (max-width: 1645px) {
+  .tech {
+    letter-spacing: .918rem;
+  }
+}
+
+@media (max-width: 1545px) {
+  .tech {
+    letter-spacing: .818rem;
+    font-size: 1vw;
+  }
+}
+
+#Banner-sub {
+  align-items: baseline;
+}
+
+#Banner-devicons {
+  padding-left: 1rem;
+  font-size: 2vw;
+  white-space: nowrap;
+}
+
+/* Handle devicons on smallers screens <915 */
+@media (max-width: 915px) {
+  i {
+    font-size: 2rem;
+  }
+}
