@@ -1,4 +1,5 @@
 import '../styles/Banner.css'
+import 'devicon/devicon.min.css';
 
 function renderTypeScript(windowWidth: number, isLandscape: boolean) {
   return windowWidth > 915
