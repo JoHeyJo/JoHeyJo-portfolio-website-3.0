@@ -1,4 +1,4 @@
-import Banner from "./Banner";
+import Banner from "../components/Banner";
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
 
