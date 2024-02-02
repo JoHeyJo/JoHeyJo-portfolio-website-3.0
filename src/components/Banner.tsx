@@ -1,5 +1,10 @@
 import '../styles/Banner.css'
 import { BannerResize } from '@/utils/BannerResize';
+
+/** Renders Banner
+ * 
+ * App -> Banner -> BannerResize
+ */
 function Banner() {
   return (
     <div id="Banner">

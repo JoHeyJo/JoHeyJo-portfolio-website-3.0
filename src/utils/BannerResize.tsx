@@ -2,6 +2,10 @@
 import { useState, useEffect } from "react";
 import { renderTypeScript, renderFlask, renderPython, renderReact } from "./view";
 
+/**
+ * 
+ * Banner -> BannerResize 
+ */
 export function BannerResize() {
   const [width, setWidth] = useState(window.innerWidth);
   const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
