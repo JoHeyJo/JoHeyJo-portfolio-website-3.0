@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Bio from '../components/Bio';
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
 
@@ -32,7 +33,7 @@ export default function App(){
               <Banner />
             </section>
             <section id="Home-Bio" style={sectionStyle}>
-              {/* <Bio /> */}
+              <Bio />
             </section>
             <section id="Home-Portfolio" style={sectionStyle}>
               {/* <Portfolio /> */}
