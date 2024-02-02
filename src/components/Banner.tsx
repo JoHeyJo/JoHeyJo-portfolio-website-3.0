@@ -1,5 +1,5 @@
 import '../styles/Banner.css'
-import { BannerResize } from '@/utils/BannerResize';
+import { BannerIcons } from '@/components/BannerIcons';
 
 /** Renders Banner
  * 
@@ -12,7 +12,7 @@ function Banner() {
       <section id="Banner-sub" className="d-flex">
         <div id="swe">swe</div>
         <section id="Banner-devicons">
-          <BannerResize />
+          <BannerIcons />
         </section>
       </section>
     </div>

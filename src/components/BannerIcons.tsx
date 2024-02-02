@@ -1,12 +1,12 @@
 "use client"
 import { useState, useEffect } from "react";
-import { renderTypeScript, renderFlask, renderPython, renderReact } from "./view";
+import { renderTypeScript, renderFlask, renderPython, renderReact } from "../utils/view";
 
 /**
  * 
- * Banner -> BannerResize 
+ * Banner -> BannerIcons 
  */
-export function BannerResize() {
+export function BannerIcons() {
   const [width, setWidth] = useState(window.innerWidth);
   const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
   useEffect(() => {
