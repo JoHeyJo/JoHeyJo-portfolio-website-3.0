@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import Bio from '../components/Bio';
+import ContactForm from '../components/ContactForm';
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
 
@@ -39,7 +40,7 @@ export default function App(){
               {/* <Portfolio /> */}
             </section>
             <section id="Home-Contact" style={sectionStyle}>
-              {/* <ContactForm /> */}
+              <ContactForm />
             </section>
           </main>
         </Col>
