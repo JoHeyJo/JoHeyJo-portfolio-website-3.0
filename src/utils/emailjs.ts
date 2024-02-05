@@ -1,4 +1,3 @@
-"use server"
 import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_KEY ?? "";
@@ -12,9 +11,9 @@ function Emailjs(e:any) {
       .then((result: any) => {
         console.log(result.text);
       }, (error: any) => {
-        console.log(error.text);
+        console.log(error);
       });
 
       return response;
 };
-export default Emailjs
+export default Emailjs  

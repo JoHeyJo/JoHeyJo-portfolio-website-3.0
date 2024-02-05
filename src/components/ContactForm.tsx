@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import '../styles/ContactForm.css'
 import { Row, Col } from 'react-bootstrap';
-import Emailjs from '../utils/emailjs';
+// import Emailjs from '../utils/emailjs';
 
 const contact_form = {
   fromName: '',
@@ -12,6 +12,25 @@ const contact_form = {
   subject: '',
   message: ''
 }
+
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_KEY ?? "";
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "";
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY ?? "";
+
+
+function Emailjs(e: any) {
+
+  const response = emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+    .then((result: any) => {
+      console.log(result.text);
+    }, (error: any) => {
+      console.log(error);
+    });
+
+  return response;
+};
 
 export const ContactForm = () => {
   const [form, setForm] = useState(contact_form);
@@ -31,12 +50,13 @@ export const ContactForm = () => {
       setAlert('Please fill out all fields');
     } else {
       try {
+        console.log('credentials',process,process.env,SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY)
         Emailjs(e);
         setForm(contact_form);
         setAlert('Thank you, your message has been sent!');
       } catch (error) {
         console.log('>>>>>>', error);
-        setForm(contact_form);
+        // setForm(contact_form);
         setAlert('Email was not sent please try, again.');
       }
     }
