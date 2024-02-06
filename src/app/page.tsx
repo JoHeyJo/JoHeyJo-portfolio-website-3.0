@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import Bio from '../components/Bio';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
 
@@ -49,7 +50,7 @@ export default function App(){
       {/* Footer */}
       <Row style={{ position: "absolute", width: "100%" }}>
         {/* <BrowserRouter> */}
-          {/* <Footer /> */}
+          <Footer />
         {/* </BrowserRouter> */}
       </Row>
     </Container>

@@ -1,8 +1,13 @@
-import "./styles/Footer.css"
+import "../styles/Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import PopText from "./PopText";
+import PopText from "./client/PopText";
 
+/** Renders footer bar
+ * 
+ * 
+ * App -> Footer
+ */
 function Footer() {
   const handleCopy = () => {
     // Copy the text to clipboard

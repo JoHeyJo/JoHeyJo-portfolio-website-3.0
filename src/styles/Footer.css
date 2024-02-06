@@ -1,0 +1,40 @@
+#Footer-top-border {
+  border-top: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  bottom: 0;
+  position: fixed;
+  height: 50px;
+  background-color: darkcyan;
+  z-index: 1;
+}
+
+#Footer-content {
+  border-top: .1px solid #323232;
+  border-bottom: 2px solid #323232;
+  height: 50px;
+}
+
+#Footer-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  position: sticky;
+  z-index: 2;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: grey;
+}
+
+#Footer-copy-email:hover {
+  color: grey;
+}
+
+#Footer-copyright {
+  font-size: .75rem;
+}
