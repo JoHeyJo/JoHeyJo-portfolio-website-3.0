@@ -1,5 +1,6 @@
 "use client"
 import Tooltip from 'react-bootstrap/Tooltip';
+import "../../styles/Footer.css"
 
 type ToolTipProp = {
   text: string;
