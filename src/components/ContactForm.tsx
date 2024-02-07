@@ -57,14 +57,14 @@ export const ContactForm = () => {
                 value={form.fromName}
                 placeholder='Name:' />
 
-              <select 
+              <select
                 required
                 id='ContactForm-select'
                 name='subject'
                 value={form.subject}
                 onChange={handleChange}>
-                {!form.subject && <option value='' disabled selected hidden>What is this about:</option>}
-                <option value='' disabled selected hidden>What is this about:</option>
+                {!form.subject && <option value='' disabled defaultValue={"What is this about:"} hidden />}
+                <option value='' disabled defaultValue={"What is this about:"} hidden />
                 <option value='employment'>Job Opportunity</option>
                 <option value='freelance'>Freelance</option>
                 <option value='inquiry'>Talk shop</option>
