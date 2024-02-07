@@ -1,20 +1,17 @@
 "use client"
-import { useState } from 'react';
+import React, { useState } from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import ToolTip from './Tooltip';
+import Tooltip from 'react-bootstrap/Tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import "../../styles/Footer.css"
 
-/** Renders interactive email icon - clicking email icon copies email to clipboard 
- * 
- * Footer -> PopText
- */
 function PopText() {
   const [text, setText] = useState("Copy email address.");
-
   const renderTooltip = (props: any) => (
-    <ToolTip text={text} {...props} />
+    <Tooltip id="button-tooltip" style={{ background: "red" }} {...props}>
+      {text}
+    </Tooltip>
   );
 
   const handleCopy = () => {
