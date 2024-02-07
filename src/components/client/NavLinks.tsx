@@ -1,6 +1,7 @@
 "use client"
-import { BrowserRouter, Link } from "react-router-dom";
-import '../styles/Nav.css';
+// import { BrowserRouter, Link } from "react-router-dom";
+import Link from 'next/link';
+import '../../styles/Nav.css';
 
 type NavLink = {
   id?: string;
@@ -15,9 +16,7 @@ type NavLinkProp = {
 
 function NavLinks({ i, section }: NavLinkProp) {
   return (
-    <BrowserRouter>
-      <Link key={i} id={section.id} className="Nav-link" to={`#${section.link}`}>{section.name}</Link>
-    </BrowserRouter>
+      <Link key={i} id={section.id} className="Nav-link" href={`#${section.link}`}>{section.name}</Link> 
 
   )
 }
