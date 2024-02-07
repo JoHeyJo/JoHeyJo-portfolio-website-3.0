@@ -31,8 +31,13 @@ a:hover {
   color: grey;
 }
 
+#Footer-copy-email {
+  background: darkcyan;
+  border: none;
+}
+
 #Footer-copy-email:hover {
-  color: grey;
+  background: grey;
 }
 
 #Footer-copyright {

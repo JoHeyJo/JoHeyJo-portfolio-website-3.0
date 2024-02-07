@@ -30,6 +30,7 @@ function PopText() {
       placement="right"
       delay={{ show: 250, hide: 400 }}
       overlay={renderTooltip}
+      // style={{color:"red"}}
     >
       <button id="Footer-copy-email" onClick={handleCopy}>
         <FontAwesomeIcon size="xl" icon={faEnvelope} />
