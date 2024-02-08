@@ -13,6 +13,11 @@ type NavLinkProp = {
   section: NavLink;
 }
 
+/** Render individual client nav links
+ * 
+ * Nav -> NavLinks
+ */
+
 function NavLinks({ section }: NavLinkProp) {
   return (
       <Link id={section.id} className="Nav-link" href={`#${section.link}`}>{section.name}</Link> 

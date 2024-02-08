@@ -11,15 +11,15 @@ export function BannerIcons() {
   const [width, setWidth] = useState(0);
   const [isLandscape, setIsLandscape] = useState(true);
   useEffect(() => {
+    setIsLandscape(window.innerWidth > window.innerHeight)
+    setWidth(window.innerWidth)
+  }, [])
+  useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth)
     }
     window.addEventListener("resize", handleResize)
   }, [isLandscape])
-  useEffect(() => {
-    setWidth(window.innerWidth)
-    setIsLandscape(window.innerWidth > window.innerHeight)
-  }, [])
   return (
     <>
       {renderTypeScript(width, isLandscape)}{renderReact(width, isLandscape)}{renderPython(width, isLandscape)} {renderFlask(width, isLandscape)}

@@ -9,7 +9,7 @@ function Nav() {
       <Navbar id="Nav-navbar" className="flex-column">
         {sections.map((section, i) =>
           section.id === "Nav-resume" ?
-            <a id={section.id} className="Nav-link" href={section.link} />
+            <a key={i} id={section.id} className="Nav-link" href={section.link} />
             :
             <NavLink key={i} section={section}/>
         )}
