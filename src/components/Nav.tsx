@@ -11,7 +11,7 @@ function Nav() {
           section.id === "Nav-resume" ?
             <a id={section.id} className="Nav-link" href={section.link} />
             :
-            <NavLink i={i} section={section}/>
+            <NavLink key={i} section={section}/>
         )}
       </Navbar>
     </div>

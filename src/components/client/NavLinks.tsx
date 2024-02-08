@@ -10,13 +10,12 @@ type NavLink = {
 }
 
 type NavLinkProp = {
-  i: number;
   section: NavLink;
 }
 
-function NavLinks({ i, section }: NavLinkProp) {
+function NavLinks({ section }: NavLinkProp) {
   return (
-      <Link key={i} id={section.id} className="Nav-link" href={`#${section.link}`}>{section.name}</Link> 
+      <Link id={section.id} className="Nav-link" href={`#${section.link}`}>{section.name}</Link> 
 
   )
 }
