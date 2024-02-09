@@ -1,4 +1,10 @@
-export const sections = [
+type Sections = {
+  link: string;
+  name: string;
+  id?: string;
+}
+
+export const sections: Sections[] = [
   {
     link: "Home-Bio",
     name: "About"
