@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { Row, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from '../utils/projectData';
 import '../styles/Portfolio.css'
 import { PortfolioContextType, PortfolioContext } from "@/context/user";
@@ -18,7 +18,7 @@ function Portfolio() {
   const [index, setIndex] = useState(0);
 
   const PortfolioContent: PortfolioContextType = {
-    toggleView,
+    toggleVgit iew,
     index,
     setIndex,
     handleSelect
