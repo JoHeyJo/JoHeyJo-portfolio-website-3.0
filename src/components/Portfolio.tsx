@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Row, Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from '../utils/projectData';
 import './styles/Portfolio.css'
-import { PortfolioContextType, PortfolioContext } from "./context/user";
+import { PortfolioContextType, PortfolioContext } from "@/app/context/user";
 import ProjectCardView from "./ProjectCardView";
 import ProjectCarouselView from "./ProjectCarouselView";
 
