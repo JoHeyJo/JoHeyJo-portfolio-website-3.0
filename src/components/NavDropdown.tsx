@@ -1,6 +1,5 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './styles/NavDropdown.css'
