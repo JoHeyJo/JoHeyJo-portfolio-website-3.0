@@ -18,7 +18,7 @@ function Portfolio() {
   const [index, setIndex] = useState(0);
 
   const PortfolioContent: PortfolioContextType = {
-    toggleVgit iew,
+    toggleView,
     index,
     setIndex,
     handleSelect

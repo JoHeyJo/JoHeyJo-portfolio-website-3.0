@@ -18,6 +18,7 @@ type ProjectProps = {
  */
 function ProjectCarouselView({ projects }: ProjectProps) {
 
+  // Context => Portfolio
   const { toggleView, index, handleSelect } = useContext(PortfolioContext);
 
   return (
@@ -26,7 +27,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
           {projects.map((project: Project) =>
             <Carousel.Item>
-              <Image className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
+              <Image className="ProjectCart uselView-image" src={project.image} alt={`${project.name}`} />
               <Carousel.Caption>
                 <h3>{project.heading}</h3>
                 <p>{project.description}</p>

@@ -1,8 +1,8 @@
 import Dropdown from 'react-bootstrap/Dropdown';
-import { HashLink } from "react-router-hash-link";
+import Link from 'next/link';;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import './styles/NavDropdown.css'
+import '../styles/NavDropdown.css'
 import { sections } from '../utils/sections';
 const RESUME_LINK = "https://github.com/JoHeyJo/myWebsiteReact/raw/main/public/Joannes_Figueroa_Resume.pdf"
 
@@ -20,13 +20,15 @@ function NavDropdown() {
       <Dropdown.Menu>
         {sections.map((section, i) =>
           section.id === "Nav-resume" ?
-            <Dropdown.Item>
-              <a id={section.id} className="Nav-link" href={section.link} />
-            </Dropdown.Item>
+            // <Dropdown.Item>
+              {/* <a id={section.id} className="Nav-link" href={section.link} /> */}
+              "hello"
+            {/* </Dropdown.Item> */}
             :
-            <Dropdown.Item>
-              <HashLink className='Nav-link' to={`#${section.link}`}>{section.name}</HashLink>
-            </Dropdown.Item>
+            "hello"
+            // <Dropdown.Item>
+            //   <Link className='Nav-link' href={`#${section.link}`}>{section.name}</Link>
+            // </Dropdown.Item>
         )}
       </Dropdown.Menu>
     </Dropdown>

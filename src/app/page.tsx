@@ -1,9 +1,10 @@
+import TopBanner from "../components/TopBanner";
 import Banner from "../components/Banner";
 import Nav from "@/components/Nav";
 import Bio from '../components/Bio';
 import Portfolio from '../components/Portfolio';
 import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer';  
 import { BrowserRouter } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
@@ -16,7 +17,7 @@ export default function App(){
         <Row>
           <Col >
             {/* <BrowserRouter> */}
-              {/* <TopBanner /> */}
+              <TopBanner />
             {/* </BrowserRouter> */}
           </Col>
         </Row>
