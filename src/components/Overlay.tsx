@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import './styles/OverlayCard.css'
 import { useContext } from "react";
-import { PortfolioContext } from "../context/user";
+import { PortfolioContext } from "@/app/context/user";
 import { Stack } from "react-bootstrap";
 
 type OverlayCardProp = {
