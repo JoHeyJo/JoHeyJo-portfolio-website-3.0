@@ -1,0 +1,34 @@
+.OverlayCard-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.OverlayCard-container:hover .OverlayCard-content {
+  transform: translateY(-100%);
+}
+
+.OverlayCard-content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: transform 300ms;
+}
+
+.OverlayCard-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.OverlayCard-summary {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.OverlayCard-summary {
+  font-weight: 300;
+}
+
+.OverlayCard-tech {
+  font-weight: 300;
+}

@@ -1,0 +1,29 @@
+.ProjectCardView-image {
+  width: 27rem;
+  height: 18rem;
+}
+
+.ProjectCardView-container {
+  position: relative;
+}
+
+img {
+  border: solid #011016;
+}
+
+.ProjectCardView-container .ProjectCardView-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.ProjectCardView-container:hover .ProjectCardView-overlay {
+  display: flex;
+  flex-direction: column-reverse;
+  background: rgba(0, 0, 0, .6);
+  padding-bottom: 1rem;
+}

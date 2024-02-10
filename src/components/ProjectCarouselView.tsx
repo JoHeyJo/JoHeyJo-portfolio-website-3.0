@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Project } from "../utils/types";
-import './styles/ProjectCarouselView.css'
+import '../styles/ProjectCarouselView.css'
 import { Col, Row } from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel';
 import Button from "react-bootstrap/Button";
-import { PortfolioContext } from "@/app/context/user";
+import { PortfolioContext } from "@/context/user";
 import Image from 'next/image';
 
 type ProjectProps = {

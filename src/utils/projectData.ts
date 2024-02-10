@@ -1,6 +1,6 @@
-import buglyImg from '../images/buglyImg.png';
-import sharebbImg from '../images/sharebbImg.png';
-import mySiteImg from '../images/mySite.png';
+import buglyImg from '../../public/images/buglyImg.png';
+import sharebbImg from '../../public/images/sharebbImg.png';
+import mySiteImg from '../../public/images/mySite.png';
 import { Project } from './types';
   
 

@@ -1,4 +1,4 @@
-import './styles/ProjectCardView.css';
+import '../styles/ProjectCardView.css';
 import OverlayCard from './OverlayCard';
 import { Project } from '../utils/types';
 import Image from 'next/image';

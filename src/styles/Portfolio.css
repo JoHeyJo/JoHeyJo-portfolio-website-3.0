@@ -1,0 +1,26 @@
+#Portfolio-container-grid {
+  display: flex;
+  align-self: center;
+  overflow-x: auto;
+}
+
+#Portfolio-container-carousel {
+  justify-content: center;
+}
+
+#Portfolio-container {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Removes white space between apps on smaller displays. 
+ - this was causing the app on the left to only be partially visible.
+ - doesn't look great but you can now scroll across all apps.
+ - need to adjust for other display sizes
+*/
+@media (min-width: 1248px) {
+  #Portfolio-container-grid {
+    justify-content: space-evenly;
+  }
+}

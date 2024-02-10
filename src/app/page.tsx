@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import Nav from "@/components/Nav";
 import Bio from '../components/Bio';
-import Portfolio from './Portfolio';
+import Portfolio from '../components/Portfolio';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import { BrowserRouter } from "react-router-dom";
