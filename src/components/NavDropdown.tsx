@@ -1,3 +1,4 @@
+"use client"
 import Dropdown from 'react-bootstrap/Dropdown';
 import Link from 'next/link';;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,15 +21,13 @@ function NavDropdown() {
       <Dropdown.Menu>
         {sections.map((section, i) =>
           section.id === "Nav-resume" ?
-            // <Dropdown.Item>
-              {/* <a id={section.id} className="Nav-link" href={section.link} /> */}
-              "hello"
-            {/* </Dropdown.Item> */}
+            <Dropdown.Item>
+              <a id={section.id} className="Nav-link" href={section.link} />
+            </Dropdown.Item>
             :
-            "hello"
-            // <Dropdown.Item>
-            //   <Link className='Nav-link' href={`#${section.link}`}>{section.name}</Link>
-            // </Dropdown.Item>
+            <Dropdown.Item>
+              <Link className='Nav-link' href={`#${section.link}`}>{section.name}</Link>
+            </Dropdown.Item>
         )}
       </Dropdown.Menu>
     </Dropdown>
