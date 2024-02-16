@@ -41,9 +41,9 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           <ul>
             <div className="text-technologies">
 
-              {projects[index].tech.map(t =>
+              {projects[index].tech.map((t,i) =>
                 <li className="text-tech">
-                  {t}
+                  {i === 0 ? t : <><span className="text-tech-pipe">|</span> {t}</>}
                 </li>
               )}
             </div>

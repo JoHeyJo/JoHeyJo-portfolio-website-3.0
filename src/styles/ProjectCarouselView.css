@@ -12,7 +12,12 @@
   height: 100%;
 }
 
+.text-tech-pipe {
+  color: #323232;;
+}
+
 .text {
+  list-style: none;
   color: whitesmoke;
   border-left: solid #323232;
   font-size: .80vw;
@@ -21,13 +26,13 @@
   font-weight: 400;
 }
 
-.text-technologies{
+.text-technologies {
   display: flex;
   border-left: solid #323232;
 }
 
 .text-tech {
-
+  list-style: none;
   color: rgb(175, 174, 174);
   font-size: .80vw;
   margin-top: 1%;
@@ -36,6 +41,7 @@
 }
 
 .text-note {
+  list-style: none;
   font-size: .80vw;
   margin-top: 1%;
   padding: 1%;
@@ -49,25 +55,30 @@
 
 /* Handle font size on smaller displays  */
 @media (max-width: 768px) {
-  .text, .text-note,
-    .text-tech {
+
+  .text,
+  .text-note,
+  .text-tech {
     margin-top: 1rem;
     font-size: 2vw;
   }
 }
 
 @media (max-width: 425px) {
-  .text, .text-note, .text-tech {
+
+  .text,
+  .text-note,
+  .text-tech {
     font-size: 4vw;
   }
 }
 
 #Footer-copy-email {
-    background: none;
-      color: inherit;
-      border: none;
-      padding: 0;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit
 }
