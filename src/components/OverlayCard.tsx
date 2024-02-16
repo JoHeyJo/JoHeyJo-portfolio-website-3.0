@@ -33,7 +33,12 @@ function OverlayCard({ index, link, header, summary, tech }: OverlayCardProp) {
           <div className="d-flex flex-column align-items-center">
             <h4 className="OverlayCard-header">{header}</h4>
             <p className="OverlayCard-summary">{summary}</p>
-            <p className="OverlayCard-tech">{tech}</p>
+            <div style={{ display: "flex" }}>
+
+              {tech.map((t, i) =>
+                <>{i === 0 ? `${t }` : ` | ${t}  `}</>
+              )}
+            </div>
           </div>
           <div className="OverlayCard-actions">
             <Button variant="dark" href={link} target="_blank">Demo</Button>
