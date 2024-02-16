@@ -25,8 +25,8 @@ function ProjectCarouselView({ projects }: ProjectProps) {
     <Row className="justify-content-end">
       <Col md={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
-          {projects.map((project: Project) =>
-            <Carousel.Item>
+          {projects.map((project: Project, i) =>
+            <Carousel.Item key={i}>
               <Image className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
               <Carousel.Caption>
                 <h3>{project.heading}</h3>
@@ -42,12 +42,12 @@ function ProjectCarouselView({ projects }: ProjectProps) {
             <div className="text-technologies">
 
               {projects[index].tech.map((t,i) =>
-                <li className="text-tech">
+                <li className="text-tech" key={i}>
                   {i === 0 ? t : <><span className="text-tech-pipe">|</span> {t}</>}
                 </li>
               )}
             </div>
-            {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
+            {projects[index].specs.map((detail, i) => <li key={i} className="text">{detail}</li>)}
             <li className="text-note">NOTE: Heroku server takes a moment to fire up.</li>
           </ul>
           <div className="d-flex justify-content-evenly" >
