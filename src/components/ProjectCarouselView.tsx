@@ -38,7 +38,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
       </Col>
       <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
-          <ul>
+          <ul style={{paddingLeft: "0px"}}>
             <div className="text-technologies">
 
               {projects[index].tech.map((t,i) =>

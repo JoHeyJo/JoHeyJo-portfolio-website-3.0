@@ -9,7 +9,7 @@ type OverlayCardProp = {
   link: string;
   header: string;
   summary: string;
-  tech: string;
+  tech: string[];
 }
 
 /** on hover will render project info & and action button to toggle portfolio view 
