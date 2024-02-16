@@ -9,7 +9,7 @@ function Bio() {
   return (
     <section id="Bio-about-me">
       <ul id="about-me-links container">
-        {user.info.map((info,i) => <li key={i}>{info}</li>)}
+        {user.info.map((info,i) => <li key={i} className='Bio-info'>{info}</li>)}
       </ul>
     </section>
   )

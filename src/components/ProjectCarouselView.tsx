@@ -27,7 +27,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
           {projects.map((project: Project) =>
             <Carousel.Item>
-              <Image className="ProjectCart uselView-image" src={project.image} alt={`${project.name}`} />
+              <Image className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
               <Carousel.Caption>
                 <h3>{project.heading}</h3>
                 <p>{project.description}</p>
@@ -39,7 +39,14 @@ function ProjectCarouselView({ projects }: ProjectProps) {
       <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
           <ul>
-            <li className="text-tech">{projects[index].tech}</li>
+            <div className="text-technologies">
+
+              {projects[index].tech.map(t =>
+                <li className="text-tech">
+                  {t}
+                </li>
+              )}
+            </div>
             {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
             <li className="text-note">NOTE: Heroku server takes a moment to fire up.</li>
           </ul>

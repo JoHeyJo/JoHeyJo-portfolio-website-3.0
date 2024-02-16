@@ -21,11 +21,11 @@ function NavDropdown() {
       <Dropdown.Menu>
         {sections.map((section, i) =>
           section.id === "Nav-resume" ?
-            <Dropdown.Item>
+            <Dropdown.Item key={i}>
               <a id={section.id} className="Nav-link" href={section.link} />
             </Dropdown.Item>
             :
-            <Dropdown.Item>
+            <Dropdown.Item key={i}>
               <Link className='Nav-link' href={`#${section.link}`}>{section.name}</Link>
             </Dropdown.Item>
         )}

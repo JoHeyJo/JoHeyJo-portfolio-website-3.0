@@ -6,7 +6,7 @@
   color: whitesmoke;
 }
 
-li {
+.Bio-info {
   list-style: none;
   font-size: 1.5vw;
   font-weight: 600;
@@ -16,7 +16,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  li {
+  .Bio-info {
     font-size: 3vw;
     padding-top: 1rem;
   }

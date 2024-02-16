@@ -2,14 +2,14 @@ import buglyImg from '../../public/images/buglyImg.png';
 import sharebbImg from '../../public/images/sharebbImg.png';
 import mySiteImg from '../../public/images/mySite.png';
 import { Project } from './types';
-  
+
 
 export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
   cardHeader: "Blog Application",
   cardSummary: "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
-  tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
+  tech: ["React", "TypeScript", "Python", "Flask", "SQLAlchemy", "Bootstrap"],
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
   specs: [
@@ -28,7 +28,7 @@ export const shareBB: Project = {
   image: sharebbImg,
   cardHeader: "React Router Application",
   cardSummary: "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
-  tech: "React | JavaScript | Python | Flask | SQLAlchemy",
+  tech: ["React", "JavaScript", "Python", "Flask ", "SQLAlchemy"],
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
   specs: [
@@ -46,8 +46,8 @@ export const portfolioSite: Project = {
   name: "Share BnB",
   image: mySiteImg,
   cardHeader: "Portfolio Website",
-  cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
-  tech: "React | TypeScript | Bootstrap",
+  cardSummary: "Server-side Rendering Single-page Application featuring a fully responsive design and a collection of diverse projects",
+  tech: ["React", "TypeScript", "Next.js", "Bootstrap"],
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
