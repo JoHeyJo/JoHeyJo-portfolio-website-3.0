@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from '../utils/projectData';
 import '../styles/Portfolio.css'
 import { PortfolioContextType, PortfolioContext } from "@/context/user";
-import ProjectCardView from "../styles/ProjectCardView";
+import ProjectCardView from "./ProjectCardView";
 import ProjectCarouselView from "./ProjectCarouselView";
 
 const Projects = [bugly, shareBB, portfolioSite];
