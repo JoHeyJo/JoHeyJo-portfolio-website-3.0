@@ -5,7 +5,6 @@ import Bio from '../components/Bio';
 import Portfolio from '../components/Portfolio';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';  
-import { BrowserRouter } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from '../styles/ContainerStyles';
 
@@ -27,9 +26,7 @@ export default function App(){
       <Row style={rowStyle}>
         {/* Navigation Sidebar (Left) */}
         <Col md={2} className="" style={navColStyle}>
-          {/* <BrowserRouter> */}
             <Nav />
-          {/* </BrowserRouter> */}
         </Col>
 
         {/* Main Section */}
@@ -53,9 +50,7 @@ export default function App(){
 
       {/* Footer */}
       <Row style={{ position: "absolute", width: "100%" }}>
-        {/* <BrowserRouter> */}
           <Footer />
-        {/* </BrowserRouter> */}
       </Row>
     </Container>
   );
