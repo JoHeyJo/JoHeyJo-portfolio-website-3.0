@@ -6,7 +6,7 @@ import Image from 'next/image';
 type ProjectCardProp = Project & {
   index: number;
 }
-
+// fixing case
 /** Project Image displayed in thumbnail view
  * 
  * Project -> ProjectCardView -> OverlayCard
