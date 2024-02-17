@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image"
 export type Project = {
   name: string;
   image: StaticImageData;
+  allTech: string;
   tech: string[];
   cardHeader: string;
   cardSummary: string;

@@ -10,6 +10,7 @@ export const bugly: Project = {
   cardHeader: "Blog Application",
   cardSummary: "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
   tech: ["React", "TypeScript", "Python", "Flask", "SQLAlchemy", "Bootstrap"],
+  allTech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
   specs: [
@@ -29,6 +30,7 @@ export const shareBB: Project = {
   cardHeader: "React Router Application",
   cardSummary: "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
   tech: ["React", "JavaScript", "Python", "Flask ", "SQLAlchemy"],
+  allTech: "React | JavaScript | Python | Flask | SQLAlchemy",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
   specs: [
@@ -48,6 +50,7 @@ export const portfolioSite: Project = {
   cardHeader: "Portfolio Website",
   cardSummary: "Server-side Rendering Single-page Application featuring a fully responsive design and a collection of diverse projects",
   tech: ["React", "TypeScript", "Next.js", "Bootstrap"],
+  allTech: "React | TypeScript | Next.js | Bootstrap",
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
