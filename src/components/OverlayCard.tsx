@@ -35,7 +35,7 @@ function OverlayCard({ index, link, header, summary, tech }: OverlayCardProp) {
             <p className="OverlayCard-summary">{summary}</p>
             <div style={{ display: "flex" }}>
               {tech.map((t, i) =>
-                <div>{i === 0 ? `${t }` : ` | ${t}  `}</div>
+                <>{i === 0 ? `${t }` : ` | ${t}  `}</>
               )}
             </div>
           </div>
