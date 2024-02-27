@@ -38,7 +38,7 @@ function Footer() {
             </a>
           </div>
           <div id="Footer-copyright">
-            <p>&copy; 2023 Joannes Figueroa</p>
+            <p>&copy; 2024 Joannes Figueroa</p>
           </div>
           <div>
             <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
