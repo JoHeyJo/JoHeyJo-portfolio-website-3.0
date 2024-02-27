@@ -8,7 +8,7 @@ export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
   cardHeader: "Blog Application",
-  cardSummary: "React application, catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
+  cardSummary: "React app, catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active, tracking progress on live projects",
   tech: ["React", "TypeScript", "Python", "Flask", "SQLAlchemy", "Bootstrap"],
   allTech: "React | TS | Python | Flask | SQLAlchemy | Bootstrap",
   description: "Browse projects and their corresponding bugs.",
